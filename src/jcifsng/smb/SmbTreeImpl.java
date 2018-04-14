@@ -275,7 +275,7 @@ class SmbTreeImpl implements SmbTreeInternal {
      * @return whether the tree is connected
      */
     public boolean isConnected () {
-//		2018/04/02
+//		2018/04/02 *
 //        return this.tid >= 0 && this.session.isConnected() && this.connectionState.get() == 2;
     	return this.session.isConnected() && this.connectionState.get() == 2;
     }
@@ -438,7 +438,7 @@ class SmbTreeImpl implements SmbTreeInternal {
             // and send it as a separate request instead
             String svc = null;
             int t = this.tid;
-//			2018/04/02            
+//			2018/04/02 *
 //            if ( t < 0 ) {
 //                throw new SmbException("Tree id is 0");
 //            }
@@ -654,7 +654,7 @@ class SmbTreeImpl implements SmbTreeInternal {
      */
     private void treeConnected ( SmbTransportImpl transport, SmbSessionImpl sess, TreeConnectResponse response ) throws CIFSException {
         int treeId = response.getTid();
-//		2018/04/02
+//		2018/04/02 *
 //        if ( treeId < 0 ) {
 //            throw new SmbException("TreeID is NULL");
 //        }
@@ -826,7 +826,7 @@ class SmbTreeImpl implements SmbTreeInternal {
                         }
                     }
 
-//                    2018/04/02
+//                    2018/04/02 *
 //                    if ( !inError && this.tid >= 0 ) {
                         try {
                             if ( transport.isSMB2() ) {
@@ -840,7 +840,7 @@ class SmbTreeImpl implements SmbTreeInternal {
                         catch ( CIFSException se ) {
                             log.error("Tree disconnect failed", se);
                         }
-//                    }
+//                    } 2018/04/02 *
                 }
                 this.inDfs = false;
                 this.inDomainDfs = false;

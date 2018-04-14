@@ -73,7 +73,7 @@ public class Trans2FindFirst2 extends SmbComTransaction {
             this.path = filename;
         }
         else {
-//            this.path = filename + "\\";
+//            this.path = filename + "\\"; 2018/04/02
             if (filename.endsWith("\\")) this.path = filename;
             else this.path = filename + "\\";
         }
