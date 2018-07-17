@@ -3,7 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="jars/bcprov-jdk15on-158.jar"/>
-	<classpathentry kind="lib" path="D:/PGMS/jcifsng-for-wrapper/jars/javax.servlet.jar"/>
-	<classpathentry kind="lib" path="jars/WrapperForSlf4j-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/PGMS/jcifs-ng-2.1.0/jars/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="jars/WrapperForSlf4j-1.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
