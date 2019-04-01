@@ -288,7 +288,7 @@ public class NtlmContext implements SSPContext {
             if ( ( this.ntlmsspFlags & NtlmFlags.NTLMSSP_NEGOTIATE_SIGN ) != 0 ) {
                 this.masterKey = msg3.getMasterKey();
 
-                if ( ( this.ntlmsspFlags & NtlmFlags.NTLMSSP_NEGOTIATE_EXTENDED_SESSIONSECURITY ) != 0 ) {
+                if (this.masterKey != null &&  ( this.ntlmsspFlags & NtlmFlags.NTLMSSP_NEGOTIATE_EXTENDED_SESSIONSECURITY ) != 0 ) {
                     initSessionSecurity(msg3.getMasterKey());
                 }
             }
